@@ -49,7 +49,7 @@ version-resolver:
       - 'patch'
       - 'bugfix'
       - 'hotfix'
-      - 'dependencies'
+      - 'dependency'
       - 'refactor'
   default: patch 
 template: |
