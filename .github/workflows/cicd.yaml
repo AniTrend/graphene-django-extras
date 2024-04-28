@@ -10,15 +10,6 @@ jobs:
     strategy:
       matrix:
         include:
-          - python: 3.7
-            django: 3.2
-            toxenv: py37-django32
-          - python: 3.8
-            django: 3.2
-            toxenv: py38-django32
-          - python: 3.9
-            django: 3.2
-            toxenv: py39-django32
           - python: 3.8
             django: 4.0
             toxenv: py38-django40
@@ -37,6 +28,15 @@ jobs:
           - python: '3.10'
             django: 4.1
             toxenv: py310-django41
+          - python: '3.10'
+            django: 5.0
+            toxenv: py310-django50
+          - python: '3.11'
+            django: 5.0
+            toxenv: py311-django50
+          - python: '3.12'
+            django: 5.0
+            toxenv: py312-django50
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v1
