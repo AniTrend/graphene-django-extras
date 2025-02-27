@@ -11,12 +11,6 @@ jobs:
       matrix:
         include:
           - python: 3.8
-            django: 3.2
-            toxenv: py38-django32
-          - python: 3.9
-            django: 3.2
-            toxenv: py39-django32
-          - python: 3.8
             django: 4.0
             toxenv: py38-django40
           - python: 3.9
